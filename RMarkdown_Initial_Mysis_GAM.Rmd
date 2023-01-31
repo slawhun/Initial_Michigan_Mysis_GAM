@@ -31,10 +31,14 @@ DensGAM <- gam(Dens ~ s(Yr))
 summary(DensGAM)
 ```
 **5. Plot a basic version of your GAM: `plot(DensGAM)`**
+<br>
+
 ```{r, echo=FALSE}
 plot(DensGAM)
 ```
 <br>
+<br>
+
 Kind of plain, womp womp
 
 <br>
@@ -45,6 +49,8 @@ Kind of plain, womp womp
 plot(DensGAM, bg="red", col="#336666", xlab = "Year", ylab = "Average Density", main = "Mysis Density in Lake Michigan 2006-2021 Using GLNPO Data")
 ```
 <br>
+<br>
+
 I added x and y labels, a title, and a color. I want to add more soon
 
 

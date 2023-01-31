@@ -58,13 +58,17 @@ summary(DensGAM)
     ## R-sq.(adj) =  0.0412   Deviance explained = 5.07%
     ## GCV = 9610.7  Scale est. = 9474.6    n = 233
 
-**5. Plot a basic version of your GAM: `plot(DensGAM)`**
+**5. Plot a basic version of your GAM: `plot(DensGAM)`** <br>
+
 ![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
-<br> Kind of plain, womp womp
+<br> <br>
+
+Kind of plain, womp womp
 
 <br> <br>
 
 **6. Spice the plot up**
 ![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
-<br> I added x and y labels, a title, and a color. I want to add more
-soon
+<br> <br>
+
+I added x and y labels, a title, and a color. I want to add more soon
