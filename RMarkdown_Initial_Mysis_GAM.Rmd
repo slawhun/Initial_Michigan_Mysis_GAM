@@ -48,6 +48,8 @@ Kind of plain, womp womp
 ```{r, echo=FALSE}
 plot(DensGAM, bg="red", col="#336666", xlab = "Year", ylab = "Average Density", main = "Mysis Density in Lake Michigan 2006-2021 Using GLNPO Data")
 ```
+
+<br>
 <br>
 <br>
 
