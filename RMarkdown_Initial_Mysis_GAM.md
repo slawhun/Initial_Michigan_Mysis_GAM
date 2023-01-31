@@ -68,8 +68,11 @@ Kind of plain, womp womp
 <br> <br>
 
 **6. Spice the plot up**
+
+<br>
+
 ![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-<br> <br> <br>
+<br> <br>
 
 I added x and y labels, a title, and a color. I want to add more soon
