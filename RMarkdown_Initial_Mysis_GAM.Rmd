@@ -65,6 +65,8 @@ summary(BmssGAM)
 ```
 <br>
 **8. Plot biomass GAM `plot(BmssGAM)`:**
+<br>
+
 ```{r, echo=FALSE}
 plot(BmssGAM)
 ```

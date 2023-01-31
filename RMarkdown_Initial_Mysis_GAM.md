@@ -107,5 +107,6 @@ summary(BmssGAM)
     ## R-sq.(adj) =  0.116   Deviance explained = 13.2%
     ## GCV =  58760  Scale est. = 57453     n = 232
 
-<br> **8. Plot biomass GAM `plot(BmssGAM)`:**
+<br> **8. Plot biomass GAM `plot(BmssGAM)`:** <br>
+
 ![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
