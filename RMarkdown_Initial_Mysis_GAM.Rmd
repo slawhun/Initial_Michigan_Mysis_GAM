@@ -1,0 +1,50 @@
+---
+title: "RMarkdown for Initial Mysis GAM"
+author: "Sarah Lawhun"
+date: "2023-01-31"
+output: github_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(knitr)
+library(rmarkdown)
+library(mgcv)
+```
+**1. Load mgcv package `library(mgcv)`** <br>
+**2. Read GLNPO csv (for this test, I have already filtered to just Lake Michigan Data).Take a look at the column names.**
+```{r}
+GLNPO <- read.csv("C:\\Users\\sarah\\Documents\\Cornell\\Mysid Data\\GAM\\Step5_OutputByStation.csv")
+
+colnames(GLNPO)
+```
+**3. Identify variables of interest for GAM:**
+```{R}
+Yr <- GLNPO$Year_
+Dens <- GLNPO$AvgDens
+Bmss <- GLNPO$AvgBmss_mg
+```
+**4. Run your GAM with x(Yr) and y(Dens) and view the summary information for the plot:**
+```{r}
+DensGAM <- gam(Dens ~ s(Yr))
+summary(DensGAM)
+```
+**5. Plot a basic version of your GAM: `plot(DensGAM)`**
+```{r, echo=FALSE}
+plot(DensGAM)
+```
+<br>
+Kind of plain, womp womp
+
+<br>
+<br>
+
+**6. Spice the plot up**
+```{r, echo=FALSE}
+plot(DensGAM, bg="red", col="#336666", xlab = "Year", ylab = "Average Density", main = "Mysis Density in Lake Michigan 2006-2021 Using GLNPO Data")
+```
+<br>
+I added x and y labels, a title, and a color. I want to add more soon
+
+
