@@ -76,3 +76,36 @@ Kind of plain, womp womp
 <br> <br>
 
 I added x and y labels, a title, and a color. I want to add more soon
+
+**7. Run your GAM with x(Yr) and y(Bmss) and view the summary
+information for the plot:**
+
+``` r
+BmssGAM <- gam(Bmss ~ s(Yr))
+summary(BmssGAM)
+```
+
+    ## 
+    ## Family: gaussian 
+    ## Link function: identity 
+    ## 
+    ## Formula:
+    ## Bmss ~ s(Yr)
+    ## 
+    ## Parametric coefficients:
+    ##             Estimate Std. Error t value Pr(>|t|)    
+    ## (Intercept)   209.76      15.74   13.33   <2e-16 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## Approximate significance of smooth terms:
+    ##        edf Ref.df     F  p-value    
+    ## s(Yr) 4.16  5.053 6.336 1.56e-05 ***
+    ## ---
+    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## 
+    ## R-sq.(adj) =  0.116   Deviance explained = 13.2%
+    ## GCV =  58760  Scale est. = 57453     n = 232
+
+<br> **8. Plot biomass GAM `plot(BmssGAM)`:**
+![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
