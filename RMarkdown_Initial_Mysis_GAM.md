@@ -1,7 +1,5 @@
 RMarkdown for Initial Mysis GAM
 ================
-Sarah Lawhun
-2023-01-31
 
 **1. Load mgcv package `library(mgcv)`** <br> **2. Read GLNPO csv (for
 this test, I have already filtered to just Lake Michigan Data).Take a
@@ -61,11 +59,11 @@ summary(DensGAM)
 **5. Plot a basic version of your GAM: `plot(DensGAM)`** <br>
 
 ![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
-<br> <br>
+<br>
 
 Kind of plain, womp womp
 
-<br> <br>
+<br>
 
 **6. Spice the plot up**
 
@@ -73,9 +71,11 @@ Kind of plain, womp womp
 
 ![](RMarkdown_Initial_Mysis_GAM_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
-<br> <br>
+<br>
 
 I added x and y labels, a title, and a color. I want to add more soon
+
+<br>
 
 **7. Run your GAM with x(Yr) and y(Bmss) and view the summary
 information for the plot:**

@@ -1,16 +1,15 @@
 ---
 title: "RMarkdown for Initial Mysis GAM"
-author: "Sarah Lawhun"
-date: "2023-01-31"
-output: github_document
+output: rmdformats::downcute
 ---
-
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
 library(knitr)
 library(rmarkdown)
 library(mgcv)
+library(rmdformats)
+library(prettydoc)
 
 ```
 **1. Load mgcv package `library(mgcv)`** <br>
@@ -38,11 +37,9 @@ summary(DensGAM)
 plot(DensGAM)
 ```
 <br>
-<br>
 
 Kind of plain, womp womp
 
-<br>
 <br>
 
 **6. Spice the plot up**
@@ -54,9 +51,10 @@ plot(DensGAM, bg="red", col="#336666", xlab = "Year", ylab = "Average Density", 
 ```
 
 <br>
-<br>
 
 I added x and y labels, a title, and a color. I want to add more soon
+
+<br>
 
 **7. Run your GAM with x(Yr) and y(Bmss) and view the summary information for the plot:**
 ```{r}
